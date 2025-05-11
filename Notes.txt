@@ -1,13 +1,36 @@
 --------------------| Day 1 [11/05/2025]|--------------------
 
-# The print() function
-
+#1 The print() function
 
     print("Hello, World!")   # For printing string
     Var = 10                 # Declaring variable
     print(Var)               # printing variable
 
-# Python escape and newline characters
+#2 Python escape and newline characters
 
+    print(" \"The itsy bitsy spider\nclimbed up the waterspout.\"")
+    print()
+    print(" \\ Down came the rain\nand washed the spider out.")
 
+#3 Using multiple arguments
 
+    print("The itsy bitsy spider" , "climbed up" , "the waterspout.")
+
+#4 Positional arguments
+
+    print("My name is", "Python.")
+    print("Monty Python.")
+
+#5 Keyword arguments
+
+    print("My name is", "Python.", end=" ")
+    print("Monty Python.")
+
+    print()
+
+    print("My", "name", "is", "Monty", "Python.", sep="-")
+
+    print()
+
+    print("My", "name", "is", sep="_", end="*")
+    print("Monty", "Python.", sep="*", end="*\n")
