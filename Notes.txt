@@ -1,0 +1,11 @@
+--------------------| Day 1 [11/05/2025]|--------------------
+
+# The print() function
+
+
+    print("Hello, World!")   # For printing string
+    Var = 10                 # Declaring variable
+    print(Var)               # printing variable
+
+# Python escape and newline characters
+
