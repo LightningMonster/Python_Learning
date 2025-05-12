@@ -248,3 +248,85 @@ Use round(value, digits) for rounded output.
     x = -1
     y = 3 * x**3 - 2 * x**2 + 3 * x - 1
     print("y =", y)
+
+-------------------------------------------------------------------------------------
+# Comments
+
+#24 Comments: Why, When, and How?
+🔹 Notes:
+    Comments are notes in the code for humans, ignored by Python.
+    Use # to start a comment.
+    Multi-line comments must start each line with #.
+    Use comments to explain:
+    What the code does
+    Why certain choices were made
+    Who wrote the code and when
+
+🔸 Example:
+    # This program calculates the hypotenuse of a right-angled triangle.
+    a = 3.0  # First leg
+    b = 4.0  # Second leg
+
+    # Hypotenuse using Pythagorean theorem
+    c = (a ** 2 + b ** 2) ** 0.5
+
+print("c =", c)
+✅ 2.5.2 – Marking Fragments of Code
+🔹 Notes:
+Comments can temporarily disable code during testing or debugging.
+
+This helps isolate bugs without deleting code.
+
+Use Ctrl + / (Win) or Cmd + / (Mac) to toggle comments quickly.
+
+🔸 Example:
+python
+Copy
+Edit
+x = 1
+y = 2
+# y = y + x  # Temporarily disabled
+
+print(x + y)  # Outputs 3, not 4
+✅ 2.5.3 – LAB: Comments
+🔹 Notes:
+Improve code readability using good variable names.
+
+Add useful comments, but remove redundant or misleading ones.
+
+A variable like total_area is more readable than x.
+
+🔸 Example (Improved Code):
+python
+Copy
+Edit
+# Calculate area of a rectangle
+length = 5
+width = 3
+
+# Formula: area = length × width
+rectangle_area = length * width
+
+print("Area of rectangle:", rectangle_area)
+✅ 2.5.4 – Section Summary
+🔹 Key Takeaways:
+Comments begin with #, and are not executed.
+
+Use them to explain code, disable code, and improve readability.
+
+Always prefer self-explanatory variable names over unclear ones.
+
+Keep comments accurate and helpful – misleading comments are worse than none.
+
+🔸 Example Recap:
+python
+Copy
+Edit
+# Introduction message
+print("Hello!")  # Greeting the user
+
+# print("I'm Python.")  # Temporarily disabled
+
+-----------------------------------------------------------------------
+# Interaction with the user
+
