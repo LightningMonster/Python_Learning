@@ -138,4 +138,18 @@ Must not be a Python keyword
     var = "Hello"   # String
     print(var)
 
+#15 Variable Names
+🔹 Notes:
+    Must start with a letter or underscore.
+    Can contain letters, numbers, and underscores.
+    Case-sensitive.
+    Cannot be a Python keyword.
+    Follow PEP 8 naming style: lower_case_with_underscores.
+
+🔸 Example:
+    my_variable = 10
+    print(my_variable)
+
+    # Invalid: 10var = 5  (will cause error)
+    # Invalid: import = 5 (keyword)
 
