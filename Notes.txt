@@ -197,3 +197,18 @@ Must not be a Python keyword
     b = 4.0
     c = (a**2 + b**2) ** 0.5
     print("c =", c)  # Output: c = 5.0
+
+#20 LAB: Apple Story
+🔹 Notes:
+    Use variables for storing values.
+    Add and print them.
+
+🔸 Example:
+    john = 3
+    mary = 5
+    adam = 6
+
+    print(john, mary, adam)
+
+    total_apples = john + mary + adam
+    print("Total number of apples:", total_apples)
