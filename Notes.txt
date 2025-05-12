@@ -161,3 +161,15 @@ Must not be a Python keyword
 🔸 Example:
     var = 1
     print(var)
+
+#17 How to Use a Variable
+🔹 Notes:
+    Use variables in expressions or print().
+    Do not use a variable before assigning it.
+    Case matters: var ≠ Var.
+
+🔸 Example:
+    var = "3.8.5"
+    print("Python version: " + var)
+
+    # Invalid: print(unknown_var)  → causes error
