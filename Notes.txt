@@ -153,3 +153,11 @@ Must not be a Python keyword
     # Invalid: 10var = 5  (will cause error)
     # Invalid: import = 5 (keyword)
 
+#16 How to Create a Variable
+🔹 Notes:
+    Created using assignment (=).
+    Variable is created and assigned in one line.
+
+🔸 Example:
+    var = 1
+    print(var)
