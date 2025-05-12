@@ -99,4 +99,43 @@
 
     print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
+------------------------------------------------------------------------------------------------------
+# Variables
+
+✅ Variables in Python
+A variable is a named container that stores data (like numbers, text, etc.).
+It has:
+    A name
+    A value
+
+📌 Rules for Variable Names
+Must start with a letter (A–Z or a–z) or underscore _
+Can contain letters, digits (0–9), and underscores
+Case-sensitive (Rate, rate, and RATE are different)
+Must not be a Python keyword
+
+🛑 Python Keywords (Can't be used as names)
+['False', 'None', 'True', 'and', 'as', 'assert', 'break',
+ 'class', 'continue', 'def', 'del', 'elif', 'else', 'except',
+ 'finally', 'for', 'from', 'global', 'if', 'import', 'in',
+ 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+ 'return', 'try', 'while', 'with', 'yield']
+
+#14 Variables: Data-Shaped Boxes
+
+🔹 Notes:
+    Variables are containers for storing data.
+    They are created when you assign a value to them.
+    Values can change and can be of any data type (int, float, string, etc.)
+
+🔸 Example:
+    var = 5         # Integer
+    print(var)
+
+    var = 3.14      # Float
+    print(var)
+
+    var = "Hello"   # String
+    print(var)
+
 
