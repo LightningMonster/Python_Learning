@@ -238,3 +238,13 @@ Use round(value, digits) for rounded output.
 
     print(miles, "miles is", round(miles * 1.61, 2), "kilometers")
     print(kilometers, "kilometers is", round(kilometers / 1.61, 2), "miles")
+
+#23 LAB: Operators and Expressions
+🔹 Notes:
+    Evaluate algebraic expressions using Python syntax.
+    Use ** for exponents, * for multiplication.
+
+🔸 Example:
+    x = -1
+    y = 3 * x**3 - 2 * x**2 + 3 * x - 1
+    print("y =", y)
