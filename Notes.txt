@@ -95,4 +95,8 @@
     print("-2 ** 3 =", -2 ** 3)         # Expected: -(2 ** 3) = -8
     print("-(3 ** 2) =", -(3 ** 2))     # Expected: -9 (same as above, made explicit)
 
+#13 Operators and parentheses
+
+    print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
+
 
