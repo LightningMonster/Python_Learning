@@ -226,3 +226,15 @@ Must not be a Python keyword
     sheep = 0
     sheep += 1
     print(sheep)  # Output: 1
+
+#22 LAB: Miles ↔ Kilometers Converter
+🔹 Notes:
+Use known conversion: 1 mile = 1.61 km
+Use round(value, digits) for rounded output.
+
+🔸 Example:
+    miles = 7.38
+    kilometers = 12.25
+
+    print(miles, "miles is", round(miles * 1.61, 2), "kilometers")
+    print(kilometers, "kilometers is", round(kilometers / 1.61, 2), "miles")
