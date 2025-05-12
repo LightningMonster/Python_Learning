@@ -35,5 +35,33 @@
     print("My", "name", "is", sep="_", end="*")
     print("Monty", "Python.", sep="*", end="*\n")
 
-$6 Formatting the output
+#6 Formatting the output
 
+    print("    *")
+    print("   * *")
+    print("  *   *")
+    print(" *     *")
+    print("***   ***")
+    print("  *   *")
+    print("  *   *")
+    print("  *****")
+
+#7 Literals – the data in itself
+
+    print("2")
+    print(2)
+
+#8 Integers
+
+    print(0o123)
+
+#9 Strings
+
+    print("I like \"Monty Python\"")
+    print('I like "Monty Python"')
+    print('I\'m Monty Python.')
+
+#10 Boolean values
+
+    print(True > False)
+    print(True < False)
