@@ -173,3 +173,16 @@ Must not be a Python keyword
     print("Python version: " + var)
 
     # Invalid: print(unknown_var)  → causes error
+
+#18 Reassigning a Variable
+🔹 Notes:
+    Reassign using the same = operator.
+    Python does not interpret = as equality, but as assignment.
+
+🔸 Example:
+    var = 100
+    var = 200 + 300
+    print(var)  # Output: 500
+
+    var = var + 1
+    print(var)  # Output: 501
