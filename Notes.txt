@@ -301,41 +301,32 @@ A variable like total_area is more readable than x.
 
     print("Area of rectangle:", rectangle_area)
 
-✅ 2.5.4 – Section Summary
+# Section Summary
 🔹 Key Takeaways:
-Comments begin with #, and are not executed.
-
-Use them to explain code, disable code, and improve readability.
-
-Always prefer self-explanatory variable names over unclear ones.
-
-Keep comments accurate and helpful – misleading comments are worse than none.
+    Comments begin with #, and are not executed.
+    Use them to explain code, disable code, and improve readability.
+    Always prefer self-explanatory variable names over unclear ones.
+    Keep comments accurate and helpful – misleading comments are worse than none.
 
 🔸 Example Recap:
-python
-Copy
-Edit
-# Introduction message
-print("Hello!")  # Greeting the user
+    # Introduction message
+    print("Hello!")  # Greeting the user
 
-# print("I'm Python.")  # Temporarily disabled
+    # print("I'm Python.")  # Temporarily disabled
 
 -----------------------------------------------------------------------
 # Interaction with the user
 
-✅ 2.6.1 – The input() Function
+#27 The input() Function
 🔹 Notes:
-input() reads user input from the console.
-
-The result is always a string, even if the user enters numbers.
+    input() reads user input from the console.
+    The result is always a string, even if the user enters numbers.
 
 🔸 Example:
-python
-Copy
-Edit
-print("Tell me anything...")
-anything = input()
-print("Hmm...", anything, "... Really?")
+    print("Tell me anything...")
+    anything = input()
+    print("Hmm...", anything, "... Really?")
+
 ✅ 2.6.2 – input() with a Prompt
 🔹 Notes:
 input("message") displays a message before waiting for input.
