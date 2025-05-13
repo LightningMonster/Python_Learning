@@ -439,3 +439,12 @@ Calculate:
     print(2 == 2)      # True
     print(1 == 2)      # False
     print(2 == 2.0)    # True
+
+#38 Inequality Operator (!=)
+    Checks if two values are not equal.
+    Returns True if they are different, otherwise False.
+
+🔸 Example:
+    x = 5
+    print(x != 5)  # False
+    print(x != 3)  # True
