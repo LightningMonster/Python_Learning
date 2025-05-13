@@ -270,24 +270,21 @@ Use round(value, digits) for rounded output.
     # Hypotenuse using Pythagorean theorem
     c = (a ** 2 + b ** 2) ** 0.5
 
-print("c =", c)
-✅ 2.5.2 – Marking Fragments of Code
+    print("c =", c)
+
+#25 Marking Fragments of Code
 🔹 Notes:
-Comments can temporarily disable code during testing or debugging.
-
-This helps isolate bugs without deleting code.
-
-Use Ctrl + / (Win) or Cmd + / (Mac) to toggle comments quickly.
+    Comments can temporarily disable code during testing or debugging.
+    This helps isolate bugs without deleting code.
+    Use Ctrl + / (Win) or Cmd + / (Mac) to toggle comments quickly.
 
 🔸 Example:
-python
-Copy
-Edit
-x = 1
-y = 2
-# y = y + x  # Temporarily disabled
+    x = 1
+    y = 2
+    # y = y + x  # Temporarily disabled
 
-print(x + y)  # Outputs 3, not 4
+    print(x + y)  # Outputs 3, not 4
+
 ✅ 2.5.3 – LAB: Comments
 🔹 Notes:
 Improve code readability using good variable names.
@@ -329,4 +326,142 @@ print("Hello!")  # Greeting the user
 
 -----------------------------------------------------------------------
 # Interaction with the user
+
+✅ 2.6.1 – The input() Function
+🔹 Notes:
+input() reads user input from the console.
+
+The result is always a string, even if the user enters numbers.
+
+🔸 Example:
+python
+Copy
+Edit
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+✅ 2.6.2 – input() with a Prompt
+🔹 Notes:
+input("message") displays a message before waiting for input.
+
+It saves using a separate print() line.
+
+🔸 Example:
+python
+Copy
+Edit
+anything = input("Tell me anything... ")
+print("Hmm...", anything, "...Really?")
+✅ 2.6.3 & 2.6.4 – input() Returns a String
+🔹 Problem:
+input() always returns a string, even if a number is entered.
+
+Arithmetic operations (like **, +, /) on strings cause TypeError.
+
+🔸 Bad Example (Causes Error):
+python
+Copy
+Edit
+number = input("Enter a number: ")
+result = number ** 2  # ❌ Error: can't raise a string to a power
+✅ 2.6.5 – Type Casting
+🔹 Notes:
+Use int() or float() to convert input into numeric types.
+
+🔸 Good Examples:
+python
+Copy
+Edit
+x = float(input("Enter a number: "))
+print("Square is:", x ** 2)
+
+# Direct cast without storing intermediate variable
+print("Square is:", float(input("Enter a number: ")) ** 2)
+✅ 2.6.6 – Hypotenuse Example with Input
+🔸 Example:
+python
+Copy
+Edit
+a = float(input("Enter the first leg length: "))
+b = float(input("Enter the second leg length: "))
+print("Hypotenuse length is", (a**2 + b**2) ** 0.5)
+✅ 2.6.7 – String Operators: + and *
+🔹 Notes:
++ concatenates strings.
+
+* replicates a string.
+
+🔸 Examples:
+python
+Copy
+Edit
+# Concatenation
+first = input("First: ")
+second = input("Second: ")
+print("Combined:", first + second)
+
+# Replication
+text = input("Enter something: ")
+print(text * 3)
+✅ 2.6.8 – Type Conversion: str()
+🔹 Notes:
+str() converts numbers to strings for printing or combining.
+
+🔸 Example:
+python
+Copy
+Edit
+a = 3.0
+b = 4.0
+print("Hypotenuse is: " + str((a ** 2 + b ** 2) ** 0.5))
+✅ 2.6.9 – LAB: Simple Input/Output
+Write a program that takes two numbers and performs 4 operations:
+
+python
+Copy
+Edit
+x = float(input("Enter first number: "))
+y = float(input("Enter second number: "))
+
+print("Addition:", x + y)
+print("Subtraction:", x - y)
+print("Multiplication:", x * y)
+print("Division:", x / y)
+✅ 2.6.10 – LAB: Operators and Expressions
+Calculate:
+
+python
+Copy
+Edit
+# y = 1 / (x + 1/(x + 1/(x + 1/x)))
+x = float(input())
+y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
+print("y =", y)
+✅ 2.6.11 – LAB: Time Calculation
+Find end time given start hour, minute, and duration in minutes:
+
+python
+Copy
+Edit
+start_hour = int(input())
+start_minute = int(input())
+duration = int(input())
+
+total_minutes = start_hour * 60 + start_minute + duration
+end_hour = (total_minutes // 60) % 24
+end_minute = total_minutes % 60
+
+print(f"{end_hour}:{end_minute}")
+✅ 2.6.12 – Section Summary
+🧠 Key Points:
+input() returns strings → use int() or float() to convert.
+
+Use + for concatenation, * for replication of strings.
+
+Use str() to convert numbers to strings for display.
+
+You can prompt the user with input("Prompt: ").
+
+Programs pause at input() until the user presses Enter.
+
 
