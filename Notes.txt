@@ -327,18 +327,15 @@ A variable like total_area is more readable than x.
     anything = input()
     print("Hmm...", anything, "... Really?")
 
-✅ 2.6.2 – input() with a Prompt
+#28 input() with a Prompt
 🔹 Notes:
-input("message") displays a message before waiting for input.
-
-It saves using a separate print() line.
+    input("message") displays a message before waiting for input.
+    It saves using a separate print() line.
 
 🔸 Example:
-python
-Copy
-Edit
-anything = input("Tell me anything... ")
-print("Hmm...", anything, "...Really?")
+    anything = input("Tell me anything... ")
+    print("Hmm...", anything, "...Really?")
+
 ✅ 2.6.3 & 2.6.4 – input() Returns a String
 🔹 Problem:
 input() always returns a string, even if a number is entered.
