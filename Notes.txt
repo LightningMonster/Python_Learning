@@ -345,19 +345,17 @@ A variable like total_area is more readable than x.
     number = input("Enter a number: ")
     result = number ** 2  # ❌ Error: can't raise a string to a power
 
-✅ 2.6.5 – Type Casting
+#30 Type Casting
 🔹 Notes:
-Use int() or float() to convert input into numeric types.
+    Use int() or float() to convert input into numeric types.
 
 🔸 Good Examples:
-python
-Copy
-Edit
-x = float(input("Enter a number: "))
-print("Square is:", x ** 2)
+    x = float(input("Enter a number: "))
+    print("Square is:", x ** 2)
 
-# Direct cast without storing intermediate variable
-print("Square is:", float(input("Enter a number: ")) ** 2)
+    # Direct cast without storing intermediate variable
+    print("Square is:", float(input("Enter a number: ")) ** 2)
+
 ✅ 2.6.6 – Hypotenuse Example with Input
 🔸 Example:
 python
