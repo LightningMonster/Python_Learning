@@ -396,16 +396,15 @@ A variable like total_area is more readable than x.
     print("Subtraction:", x - y)
     print("Multiplication:", x * y)
     print("Division:", x / y)
-✅ 2.6.10 – LAB: Operators and Expressions
+
+#35 LAB: Operators and Expressions
 Calculate:
 
-python
-Copy
-Edit
-# y = 1 / (x + 1/(x + 1/(x + 1/x)))
-x = float(input())
-y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
-print("y =", y)
+    # y = 1 / (x + 1/(x + 1/(x + 1/x)))
+    x = float(input())
+    y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
+    print("y =", y)
+
 ✅ 2.6.11 – LAB: Time Calculation
 Find end time given start hour, minute, and duration in minutes:
 
