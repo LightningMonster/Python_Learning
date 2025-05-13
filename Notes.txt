@@ -285,26 +285,22 @@ Use round(value, digits) for rounded output.
 
     print(x + y)  # Outputs 3, not 4
 
-✅ 2.5.3 – LAB: Comments
+#25 LAB: Comments
 🔹 Notes:
 Improve code readability using good variable names.
-
 Add useful comments, but remove redundant or misleading ones.
-
 A variable like total_area is more readable than x.
 
 🔸 Example (Improved Code):
-python
-Copy
-Edit
-# Calculate area of a rectangle
-length = 5
-width = 3
+    # Calculate area of a rectangle
+    length = 5
+    width = 3
 
-# Formula: area = length × width
-rectangle_area = length * width
+    # Formula: area = length × width
+    rectangle_area = length * width
 
-print("Area of rectangle:", rectangle_area)
+    print("Area of rectangle:", rectangle_area)
+
 ✅ 2.5.4 – Section Summary
 🔹 Key Takeaways:
 Comments begin with #, and are not executed.
