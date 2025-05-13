@@ -418,16 +418,24 @@ Calculate:
 
     print(f"{end_hour}:{end_minute}")
 
-✅ 2.6.12 – Section Summary
-🧠 Key Points:
-input() returns strings → use int() or float() to convert.
+# Section Summary
+    🧠 Key Points:
+    input() returns strings → use int() or float() to convert.
+    Use + for concatenation, * for replication of strings.
+    Use str() to convert numbers to strings for display.
+    You can prompt the user with input("Prompt: ").
+    Programs pause at input() until the user presses Enter.
 
-Use + for concatenation, * for replication of strings.
+-----------------------------------------------------------------------------------
 
-Use str() to convert numbers to strings for display.
+# Making decisions in Python
 
-You can prompt the user with input("Prompt: ").
+#37 Equality Operator (==)
+    Checks if two values are equal.
+    Returns True if they are equal, otherwise False.
 
-Programs pause at input() until the user presses Enter.
+🔸 Example:
 
-
+    print(2 == 2)      # True
+    print(1 == 2)      # False
+    print(2 == 2.0)    # True
