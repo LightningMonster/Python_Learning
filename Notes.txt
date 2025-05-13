@@ -285,7 +285,7 @@ Use round(value, digits) for rounded output.
 
     print(x + y)  # Outputs 3, not 4
 
-#25 LAB: Comments
+#26 LAB: Comments
 🔹 Notes:
 Improve code readability using good variable names.
 Add useful comments, but remove redundant or misleading ones.
