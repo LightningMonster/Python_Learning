@@ -405,21 +405,19 @@ Calculate:
     y = 1 / (x + 1 / (x + 1 / (x + 1 / x)))
     print("y =", y)
 
-✅ 2.6.11 – LAB: Time Calculation
-Find end time given start hour, minute, and duration in minutes:
+#36 LAB: Time Calculation
+    Find end time given start hour, minute, and duration in minutes:
 
-python
-Copy
-Edit
-start_hour = int(input())
-start_minute = int(input())
-duration = int(input())
+    start_hour = int(input())
+    start_minute = int(input())
+    duration = int(input())
 
-total_minutes = start_hour * 60 + start_minute + duration
-end_hour = (total_minutes // 60) % 24
-end_minute = total_minutes % 60
+    total_minutes = start_hour * 60 + start_minute + duration
+    end_hour = (total_minutes // 60) % 24
+    end_minute = total_minutes % 60
 
-print(f"{end_hour}:{end_minute}")
+    print(f"{end_hour}:{end_minute}")
+
 ✅ 2.6.12 – Section Summary
 🧠 Key Points:
 input() returns strings → use int() or float() to convert.
