@@ -356,14 +356,12 @@ A variable like total_area is more readable than x.
     # Direct cast without storing intermediate variable
     print("Square is:", float(input("Enter a number: ")) ** 2)
 
-✅ 2.6.6 – Hypotenuse Example with Input
+#31 Hypotenuse Example with Input
 🔸 Example:
-python
-Copy
-Edit
-a = float(input("Enter the first leg length: "))
-b = float(input("Enter the second leg length: "))
-print("Hypotenuse length is", (a**2 + b**2) ** 0.5)
+    a = float(input("Enter the first leg length: "))
+    b = float(input("Enter the second leg length: "))
+    print("Hypotenuse length is", (a**2 + b**2) ** 0.5)
+
 ✅ 2.6.7 – String Operators: + and *
 🔹 Notes:
 + concatenates strings.
