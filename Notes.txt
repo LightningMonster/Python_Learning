@@ -448,3 +448,20 @@ Calculate:
     x = 5
     print(x != 5)  # False
     print(x != 3)  # True
+
+#39 Greater Than (>)
+    Returns True if the left value is greater than the right value.
+
+🔸 Example:
+
+a = 10
+b = 7
+print(a > b)  # True
+
+#40 Greater Than or Equal To (>=)
+    Returns True if the left value is greater than or equal to the right.
+
+🔸 Example:
+
+temperature = 0.0
+print(temperature >= 0.0)  # True
