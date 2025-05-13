@@ -377,17 +377,15 @@ A variable like total_area is more readable than x.
     text = input("Enter something: ")
     print(text * 3)
 
-✅ 2.6.8 – Type Conversion: str()
+#33 Type Conversion: str()
 🔹 Notes:
-str() converts numbers to strings for printing or combining.
+    str() converts numbers to strings for printing or combining.
 
 🔸 Example:
-python
-Copy
-Edit
-a = 3.0
-b = 4.0
-print("Hypotenuse is: " + str((a ** 2 + b ** 2) ** 0.5))
+    a = 3.0
+    b = 4.0
+    print("Hypotenuse is: " + str((a ** 2 + b ** 2) ** 0.5))
+
 ✅ 2.6.9 – LAB: Simple Input/Output
 Write a program that takes two numbers and performs 4 operations:
 
