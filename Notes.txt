@@ -362,24 +362,21 @@ A variable like total_area is more readable than x.
     b = float(input("Enter the second leg length: "))
     print("Hypotenuse length is", (a**2 + b**2) ** 0.5)
 
-✅ 2.6.7 – String Operators: + and *
+#32 String Operators: + and *
 🔹 Notes:
-+ concatenates strings.
-
-* replicates a string.
+    + concatenates strings.
+    * replicates a string.
 
 🔸 Examples:
-python
-Copy
-Edit
-# Concatenation
-first = input("First: ")
-second = input("Second: ")
-print("Combined:", first + second)
+    # Concatenation
+    first = input("First: ")
+    second = input("Second: ")
+    print("Combined:", first + second)
 
-# Replication
-text = input("Enter something: ")
-print(text * 3)
+    # Replication
+    text = input("Enter something: ")
+    print(text * 3)
+
 ✅ 2.6.8 – Type Conversion: str()
 🔹 Notes:
 str() converts numbers to strings for printing or combining.
