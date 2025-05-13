@@ -336,18 +336,15 @@ A variable like total_area is more readable than x.
     anything = input("Tell me anything... ")
     print("Hmm...", anything, "...Really?")
 
-✅ 2.6.3 & 2.6.4 – input() Returns a String
+#29 input() Returns a String
 🔹 Problem:
-input() always returns a string, even if a number is entered.
-
-Arithmetic operations (like **, +, /) on strings cause TypeError.
+    input() always returns a string, even if a number is entered.
+    Arithmetic operations (like **, +, /) on strings cause TypeError.
 
 🔸 Bad Example (Causes Error):
-python
-Copy
-Edit
-number = input("Enter a number: ")
-result = number ** 2  # ❌ Error: can't raise a string to a power
+    number = input("Enter a number: ")
+    result = number ** 2  # ❌ Error: can't raise a string to a power
+
 ✅ 2.6.5 – Type Casting
 🔹 Notes:
 Use int() or float() to convert input into numeric types.
