@@ -465,3 +465,1301 @@ print(a > b)  # True
 
 temperature = 0.0
 print(temperature >= 0.0)  # True
+
+#41 Less Than (<)
+    Returns True if the left value is less than the right value.
+
+🔸 Example:
+    x = 5
+    y = 10
+    print(x < y)  # True
+
+#42 Less Than or Equal To (<=)
+    Returns True if the left value is less than or equal to the right value.
+
+🔸 Example:
+    marks = 75
+    print(marks <= 100)  # True
+
+#43 Equality Operator (==)
+    Returns True if both values are equal.
+
+🔸 Example:
+    x = 5
+    y = 5
+    print(x == y)  # True
+
+#44 Inequality Operator (!=)
+    Returns True if the values are not equal.
+
+🔸 Example:
+    a = 3
+    b = 4
+    print(a != b)  # True
+
+#45 if Statement
+Executes a block of code only if the condition is True.
+
+🔸 Example:
+
+python
+Copy
+Edit
+temperature = 30
+if temperature > 25:
+    print("It's hot outside.")
+#46 Indentation in if Block
+Indented code runs only when the if condition is True.
+
+🔸 Example:
+
+python
+Copy
+Edit
+x = 10
+if x > 5:
+    print("Greater than 5")  # This runs only if condition is true
+print("Done")  # Always runs
+#47 if-else Statement
+Executes one block if condition is True, another if False.
+
+🔸 Example:
+
+python
+Copy
+Edit
+weather = "rainy"
+if weather == "sunny":
+    print("Go for a walk.")
+else:
+    print("Stay indoors.")
+#48 Nested if Statements
+An if inside another if for multi-level decisions.
+
+🔸 Example:
+
+python
+Copy
+Edit
+weather = "sunny"
+restaurant_open = True
+
+if weather == "sunny":
+    if restaurant_open:
+        print("Eat outside.")
+    else:
+        print("Eat at home.")
+#49 elif Statement
+Checks multiple conditions one by one; runs only the first True one.
+
+🔸 Example:
+
+python
+Copy
+Edit
+score = 85
+
+if score >= 90:
+    print("Grade A")
+elif score >= 80:
+    print("Grade B")
+elif score >= 70:
+    print("Grade C")
+else:
+    print("Grade F")
+
+🔹 #50: Finding the Largest of Two Numbers
+This code reads two numbers and prints the larger.
+
+python
+Copy
+Edit
+# 🔸 Example
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+if number1 > number2:
+    larger_number = number1
+else:
+    larger_number = number2
+
+print("The larger number is:", larger_number)
+🔹 #51: Inline if-else Style
+Python allows single-line if-else statements.
+
+python
+Copy
+Edit
+# 🔸 Example
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+if number1 > number2: larger_number = number1
+else: larger_number = number2
+
+print("The larger number is:", larger_number)
+🔹 #52: Largest of Three Numbers
+Assumes the first is the largest, then checks the others.
+
+python
+Copy
+Edit
+# 🔸 Example
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+
+largest_number = number1
+
+if number2 > largest_number:
+    largest_number = number2
+
+if number3 > largest_number:
+    largest_number = number3
+
+print("The largest number is:", largest_number)
+🔹 #53: Pseudocode Concept (Finding Largest of Many)
+Find the largest of many numbers using a sentinel value (-1) to stop.
+
+python
+Copy
+Edit
+# 🔸 Pseudocode-like
+largest_number = -999999999
+number = int(input())
+
+if number == -1:
+    print(largest_number)
+    exit()
+
+if number > largest_number:
+    largest_number = number
+
+# Repeat this block in a loop
+🔹 #54: Python Loop Version for Largest of Many
+Use a while loop to accept unknown numbers until -1 is entered.
+
+python
+Copy
+Edit
+# 🔸 Example
+largest_number = -999999999
+
+while True:
+    number = int(input("Enter a number or -1 to stop: "))
+    if number == -1:
+        break
+    if number > largest_number:
+        largest_number = number
+
+print("The largest number is:", largest_number)
+🔹 #55: Using Python’s Built-in max()
+max() returns the largest of multiple values.
+
+python
+Copy
+Edit
+# 🔸 Example
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+
+largest_number = max(number1, number2, number3)
+print("The largest number is:", largest_number)
+🔸 LAB Summaries
+🔹 #56: LAB – Spathiphyllum Response (if-elif-else)
+Use conditionals to print messages based on input.
+
+python
+Copy
+Edit
+# 🔸 Example
+plant = input("Enter plant name: ")
+
+if plant == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif plant == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+else:
+    print("Spathiphyllum! Not", plant + "!")
+🔹 #57: LAB – Income Tax Calculator (if-else)
+Calculate tax based on income brackets.
+
+python
+Copy
+Edit
+# 🔸 Example
+income = float(input("Enter the income: "))
+
+if income <= 85528:
+    tax = income * 0.18 - 556.02
+else:
+    tax = 14839.02 + (income - 85528) * 0.32
+
+if tax < 0:
+    tax = 0.0
+
+print("The tax is:", round(tax, 0), "thalers")
+
+#58: LAB – Leap Year Checker (if-elif-else)
+Check whether a year is a leap year using Gregorian rules.
+
+🔸 Example
+year = int(input("Enter a year: "))
+
+if year < 1582:
+    print("Not within the Gregorian calendar period")
+elif year % 4 != 0:
+    print("Common year")
+elif year % 100 != 0:
+    print("Leap year")
+elif year % 400 != 0:
+    print("Common year")
+else:
+    print("Leap year")
+
+#59: 3.2 Section 2 – Loops in Python
+
+Learn how to use while and for loops in Python. You'll discover how to create and avoid infinite loops, exit loops, and skip iterations.
+
+#60: 3.2.1 Looping your code with while
+
+The while loop repeatedly executes a block of code as long as a condition is True.
+
+🔸 Example
+python
+Copy
+Edit
+number = int(input("Enter a number: "))
+while number != -1:
+    if number > 0:
+        print("Positive number entered:", number)
+    number = int(input("Enter a number or type -1 to stop: "))
+#61: 3.2.2 An infinite loop
+
+An infinite loop continues running forever. This occurs if the condition never becomes False.
+
+🔸 Example
+python
+Copy
+Edit
+while True:
+    print("I'm stuck inside a loop.")
+To stop this, press Ctrl-C.
+
+#62: 3.2.3 The while loop: more examples
+
+Using a while loop to count even and odd numbers, stopping when zero is entered.
+
+🔸 Example
+python
+Copy
+Edit
+odd_numbers = 0
+even_numbers = 0
+number = int(input("Enter a number or type 0 to stop: "))
+while number != 0:
+    if number % 2 == 1:
+        odd_numbers += 1
+    else:
+        even_numbers += 1
+    number = int(input("Enter a number or type 0 to stop: "))
+print("Odd numbers count:", odd_numbers)
+print("Even numbers count:", even_numbers)
+#63: Using a counter variable to exit a loop
+
+You can use a counter to control the number of iterations in a while loop.
+
+🔸 Example
+python
+Copy
+Edit
+counter = 5
+while counter:
+    print("Inside the loop.", counter)
+    counter -= 1
+print("Outside the loop.", counter)
+#64: 3.2.4 LAB – Guess the Secret Number
+
+Help the magician complete the program where the user guesses the secret number.
+
+🔸 Example
+python
+Copy
+Edit
+secret_number = 7  # The magician's secret number
+number = int(input("Enter your guess: "))
+while number != secret_number:
+    print("Ha ha! You're stuck in my loop!")
+    number = int(input("Enter your guess: "))
+print("Well done, muggle! You are free now.")
+#65: 3.2.5 Looping your code with for
+
+A for loop is used for iterating over a range of numbers or items in a collection, often when the number of iterations is known.
+
+🔸 Example
+python
+Copy
+Edit
+for i in range(10):
+    print("Turn", i + 1)
+The loop will run 10 times, with i taking values from 0 to 9.
+
+#66: LAB – Counting Mississippily
+Create a program that counts to five mississippily using a for loop, adding a pause between prints.
+
+🔸 Example
+
+python
+Copy
+Edit
+import time
+
+for i in range(1, 6):
+    print(f"{i} Mississippi")
+    time.sleep(1)
+
+print("Ready or not, here I come!")
+#67: The break and continue Statements
+Learn about the break and continue statements used to control loop execution.
+
+🔸 Example (using break)
+
+python
+Copy
+Edit
+while True:
+    user_input = input("Enter a number: ")
+    if user_input == '0':
+        print("Exiting the loop.")
+        break
+    print(f"You entered: {user_input}")
+🔸 Example (using continue)
+
+python
+Copy
+Edit
+for i in range(1, 6):
+    if i == 3:
+        continue  # Skip printing when i is 3
+    print(f"The value of i is {i}")
+#68: LAB – The break Statement – Stuck in a Loop
+Design a program that uses a while loop and breaks when the user enters a secret word, "chupacabra."
+
+🔸 Example
+
+python
+Copy
+Edit
+while True:
+    user_input = input("Enter a word: ")
+    if user_input == "chupacabra":
+        print("You've successfully left the loop.")
+        break
+#69: LAB – The continue Statement – The Ugly Vowel Eater
+Create a program that removes vowels (A, E, I, O, U) from a word entered by the user, using continue to skip the vowels.
+
+🔸 Example
+
+python
+Copy
+Edit
+user_word = input("Enter a word: ").upper()
+for letter in user_word:
+    if letter in "AEIOU":
+        continue
+    print(letter)
+#70: LAB – The continue Statement – The Pretty Vowel Eater
+Redesign the vowel eater program to build a new string without vowels, using continue and string concatenation.
+
+🔸 Example
+
+python
+Copy
+Edit
+user_word = input("Enter a word: ").upper()
+word_without_vowels = ""
+
+for letter in user_word:
+    if letter in "AEIOU":
+        continue
+    word_without_vowels += letter
+
+print(word_without_vowels)
+
+#71: The while Loop and the else Branch
+Learn how the else branch works with while loops, executing once after the loop ends.
+
+🔸 Example
+
+python
+Copy
+Edit
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+else:
+    print("Loop finished!")
+#72: The for Loop and the else Branch
+Explore how the else branch works with for loops, running after the loop completes.
+
+🔸 Example
+
+python
+Copy
+Edit
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished!")
+#73: LAB – Essentials of the while Loop
+Create a program that calculates the height of a pyramid that can be built using a given number of blocks, based on the rules of stacking.
+
+🔸 Example
+
+python
+Copy
+Edit
+blocks = int(input("Enter the number of blocks: "))
+height = 0
+layer = 1
+
+while blocks >= layer:
+    blocks -= layer
+    height += 1
+    layer += 1
+
+print(f"The height of the pyramid: {height}")
+#74: LAB – Collatz's Hypothesis
+Implement a program to test the Collatz hypothesis, counting steps until the number reaches 1.
+
+🔸 Example
+
+python
+Copy
+Edit
+c0 = int(input("Enter a number: "))
+steps = 0
+
+while c0 != 1:
+    print(c0)
+    if c0 % 2 == 0:
+        c0 //= 2
+    else:
+        c0 = 3 * c0 + 1
+    steps += 1
+
+print(f"steps = {steps}")
+
+#75: Logical Operators in Python (and, or, not)
+Understand how logical operators (and, or, not) work with conditions to form complex logic.
+
+🔸 Example
+
+python
+Copy
+Edit
+a = 5
+b = 10
+
+# Using 'and'
+if a > 0 and b > 0:
+    print("Both are positive")
+
+# Using 'or'
+if a > 0 or b > 0:
+    print("At least one is positive")
+
+# Using 'not'
+if not a < 0:
+    print("a is not negative")
+#76: Logical Expressions (De Morgan’s Laws)
+Learn to apply De Morgan's laws in Python to simplify logical expressions.
+
+🔸 Example
+
+python
+Copy
+Edit
+p = True
+q = False
+
+# De Morgan's Laws
+print(not (p and q) == (not p) or (not q))  # True
+print(not (p or q) == (not p) and (not q))  # True
+#77: Logical Values vs. Single Bits
+Explore how logical operations work with non-zero values as True and zero as False.
+
+🔸 Example
+
+python
+Copy
+Edit
+i = 1
+j = not not i  # True, because i is non-zero
+print(j)
+#78: Bitwise Operators in Python (&, |, ~, ^)
+Learn about bitwise operators (&, |, ~, ^) that work on individual bits.
+
+🔸 Example
+
+python
+Copy
+Edit
+i = 15   # 00000000000000000000000000001111
+j = 22   # 00000000000000000000000000010110
+
+# Bitwise AND
+bitwise_and = i & j
+print(bitwise_and)  # 6 (00000000000000000000000000000110)
+
+# Bitwise OR
+bitwise_or = i | j
+print(bitwise_or)   # 31 (00000000000000000000000000011111)
+
+# Bitwise NOT
+bitwise_not = ~i
+print(bitwise_not)  # -16 (two's complement)
+
+# Bitwise XOR
+bitwise_xor = i ^ j
+print(bitwise_xor)  # 25 (00000000000000000000000000011001)
+
+#79: Bitwise Operations for Bit Manipulation
+Learn to manipulate single bits using bitwise operators and masks.
+
+🔸 Example
+
+python
+Copy
+Edit
+flag_register = 0x1234  # Example register with a bit for checking
+the_mask = 8  # Mask for the third bit (0-indexed)
+
+# Check the state of the bit
+if flag_register & the_mask:
+    print("The bit is set.")
+else:
+    print("The bit is reset.")
+
+# Reset the bit
+flag_register &= ~the_mask
+print(f"After resetting: {flag_register}")
+
+# Set the bit
+flag_register |= the_mask
+print(f"After setting: {flag_register}")
+
+# Negate the bit
+flag_register ^= the_mask
+print(f"After negating: {flag_register}")
+
+#80: Binary Left Shift and Right Shift
+Learn how to use binary shift operators (<< and >>) to perform left and right shifts in Python, similar to multiplication and division by powers of 2.
+
+🔸 Example
+
+python
+Copy
+Edit
+value = 17
+
+# Left shift by 2 bits (multiply by 4)
+left_shift = value << 2
+print(f"17 << 2 = {left_shift}")  # 68 (17 * 4)
+
+# Right shift by 1 bit (divide by 2)
+right_shift = value >> 1
+print(f"17 >> 1 = {right_shift}")  # 8 (17 // 2)
+
+#81: Shifting Bits and Multiplication/Division by Powers of 2
+Understand the practical use of shifting for efficient multiplication and division.
+
+🔸 Example
+
+python
+Copy
+Edit
+value = 12345
+
+# Multiply by 2^3 (left shift by 3 bits)
+multiply_by_8 = value << 3
+print(f"12345 << 3 = {multiply_by_8}")  # 98760 (12345 * 8)
+
+# Divide by 2^2 (right shift by 2 bits)
+divide_by_4 = value >> 2
+print(f"12345 >> 2 = {divide_by_4}")  # 3086 (12345 // 4)
+
+
+#82: Lists – Why Do We Need Lists?
+Lists allow us to store multiple values in a single variable, which helps manage large amounts of data efficiently. They are especially useful when dealing with large collections of data like numbers, strings, or other lists.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+print("Original list:", numbers)
+#83: Indexing Lists
+Indexing allows access to a specific element in a list. Python lists are zero-indexed, meaning the first element has an index of 0.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+numbers[0] = 111  # Changing the first element
+print("Updated list:", numbers)
+#84: Accessing List Content
+You can access individual list elements using their index or print the entire list.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+print(numbers[0])  # Accessing first element
+print(numbers)     # Printing whole list
+#85: The len() Function
+The len() function is used to find the number of elements in a list.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+print("Length of list:", len(numbers))
+#86: Removing Elements from a List
+You can remove elements from a list using the del statement. The list's length reduces by one when an element is removed.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+del numbers[1]  # Removes second element
+print("Updated list:", numbers)
+print("Length of list:", len(numbers))
+#87: Negative Indices
+Negative indices allow you to access list elements starting from the end, with -1 being the last element.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [10, 5, 7, 2, 1]
+print(numbers[-1])  # Last element
+print(numbers[-2])  # Second last element
+#88: LAB – The Basics of Lists
+A challenge where the user updates the middle number, removes the last element, and prints the list’s length.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [1, 2, 3, 4, 5]
+numbers[2] = int(input("Enter a new middle number: "))
+del numbers[4]
+print("Length of list:", len(numbers))
+#89: Functions vs. Methods
+Functions and methods both perform operations, but methods are associated with objects (like lists) and can modify their state.
+
+🔸 Example
+
+python
+Copy
+Edit
+# Function
+def add(a, b):
+    return a + b
+
+# Method
+numbers = [1, 2, 3]
+numbers.append(4)  # Adds an element to the list
+#90: Adding Elements to a List: append() and insert()
+The append() method adds an element at the end of a list, while insert() allows you to specify the index where the new element should go.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [1, 2, 3]
+numbers.append(4)  # Adds 4 to the end
+numbers.insert(1, 5)  # Inserts 5 at index 1
+print(numbers)
+#91: Making Use of Lists with Loops
+You can iterate over lists using loops, which simplifies operations like summing elements.
+
+🔸 Example
+
+python
+Copy
+Edit
+numbers = [1, 2, 3, 4]
+total = 0
+for num in numbers:
+    total += num
+print("Total:", total)
+#92: Lists in Action – Reversing the List
+You can use a for loop to reverse the order of a list's elements.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 1, 8, 3, 5]
+for i in range(len(my_list) // 2):
+    my_list[i], my_list[len(my_list) - i - 1] = my_list[len(my_list) - i - 1], my_list[i]
+print(my_list)
+
+#93: LAB – The Basics of Lists (The Beatles)
+Create a list for The Beatles' band members, modify the list by appending, deleting, and inserting members, reflecting the band's lineup changes.
+
+🔸 Example
+
+python
+Copy
+Edit
+beatles = []
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+beatles.append(input("Enter member name: "))  # Add user-input member
+del beatles[3]  # Remove last member
+beatles.insert(0, "Ringo Starr")  # Insert Ringo at the start
+print(beatles)
+
+
+#94: LAB – Bubble Sort Algorithm
+Sort a list of integers using the bubble sort algorithm.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [8, 10, 6, 2, 4]  # list to sort
+swapped = True  # It's a little fake, we need it to enter the while loop.
+
+while swapped:
+    swapped = False  # no swaps so far
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True  # a swap occurred!
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print(my_list)
+#95: LAB – Python List Sort Method
+Use Python's built-in sort() method to sort a list in increasing order.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)  # Output: [2, 4, 6, 8, 10]
+
+#96: LAB – List Reverse Method
+Reverse the order of elements in a list using the reverse() method.
+
+🔸 Example
+
+python
+Copy
+Edit
+lst = [5, 3, 1, 2, 4]
+print(lst)  # Output: [5, 3, 1, 2, 4]
+
+lst.reverse()
+print(lst)  # Output: [4, 2, 1, 3, 5]
+
+#97: List Assignment vs. Copying
+Assigning one list to another variable doesn’t create a copy—both names refer to the same list.
+
+🔸 Example
+
+python
+Copy
+Edit
+list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_2)  # Output: [2]
+#98: Copy a List Using Slice
+Use slicing ([:]) to create a new, independent copy of a list.
+
+🔸 Example
+
+python
+Copy
+Edit
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)  # Output: [1]
+#99: Slicing a Portion of a List
+Slicing format: my_list[start:end] creates a new list from start to end - 1.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:3]
+print(new_list)  # Output: [8, 6]
+#100: Using Negative Indices in Slicing
+Negative indices count from the end of the list.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:-1]
+print(new_list)  # Output: [8, 6, 4]
+#101: Empty Slice if Start > End
+A slice returns an empty list if start is after end.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[-1:1]
+print(new_list)  # Output: []
+#102: Omitting Start or End in Slices
+You can omit start or end for more concise slicing.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+print(my_list[:3])    # Output: [10, 8, 6]
+print(my_list[3:])    # Output: [4, 2]
+print(my_list[:])     # Output: [10, 8, 6, 4, 2]
+#103: Deleting a Slice from a List
+Use del with slices to remove part or all of a list.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+del my_list[1:3]
+print(my_list)  # Output: [10, 4, 2]
+
+del my_list[:]  # deletes all elements
+print(my_list)  # Output: []
+#104: Deleting the Entire List
+Using del list_name deletes the list variable entirely.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [10, 8, 6, 4, 2]
+del my_list
+# print(my_list)  # Error: list no longer exists
+#105: Membership Operators: in and not in
+Check if an element exists in a list.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = ["A", "B", 1, 2]
+print("A" in my_list)      # Output: True
+print("C" not in my_list)  # Output: True
+print(2 not in my_list)    # Output: False
+#106: Finding the Largest Element in a List
+Loop through the list to find the maximum value.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [17, 3, 11, 5, 1, 9, 7, 15, 13]
+largest = my_list[0]
+
+for i in my_list[1:]:
+    if i > largest:
+        largest = i
+
+print(largest)  # Output: 17
+#107: Finding the Index of an Element
+Search for a value in a list and get its index.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+to_find = 5
+found = False
+
+for i in range(len(my_list)):
+    if my_list[i] == to_find:
+        found = True
+        break
+
+if found:
+    print("Element found at index", i)
+else:
+    print("absent")
+#108: Lottery Number Match Counter
+Count how many numbers from one list appear in another.
+
+🔸 Example
+
+python
+Copy
+Edit
+drawn = [5, 11, 9, 42, 3, 49]
+bets = [3, 7, 11, 42, 34, 49]
+hits = 0
+
+for number in bets:
+    if number in drawn:
+        hits += 1
+
+print(hits)  # Output: 4
+
+#109: LAB – Remove Duplicates from a List
+Create a new list without repeated elements.
+
+🔸 Example
+
+python
+Copy
+Edit
+my_list = [1, 2, 2, 3, 4, 3, 5, 1]
+unique_list = []
+
+for number in my_list:
+    if number not in unique_list:
+        unique_list.append(number)
+
+print(unique_list)  # Output: [1, 2, 3, 4, 5]
+
+#110: Nested Lists – Creating a Row of Chess Pieces
+Create a row on a chessboard using a loop and list comprehension.
+
+🔸 Example
+
+python
+Copy
+Edit
+row = []
+for i in range(8):
+    row.append("WHITE_PAWN")
+# OR using list comprehension
+row = ["WHITE_PAWN" for i in range(8)]
+#111: List Comprehension – Generate Squares of Numbers
+Use list comprehension to create a list of square numbers.
+
+🔸 Example
+
+python
+Copy
+Edit
+squares = [x ** 2 for x in range(10)]
+# Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+#112: List Comprehension – Powers of Two
+Generate a list of the first eight powers of 2.
+
+🔸 Example
+
+python
+Copy
+Edit
+twos = [2 ** i for i in range(8)]
+# Output: [1, 2, 4, 8, 16, 32, 64, 128]
+#113: List Comprehension with Condition – Odd Squares Only
+Filter odd numbers from a list using a condition in list comprehension.
+
+🔸 Example
+
+python
+Copy
+Edit
+squares = [x ** 2 for x in range(10)]
+odds = [x for x in squares if x % 2 != 0]
+# Output: [1, 9, 25, 49, 81]
+#114: 2D List – Chessboard Representation
+Create an 8x8 chessboard where each field is EMPTY.
+
+🔸 Example
+
+python
+Copy
+Edit
+board = []
+for i in range(8):
+    row = ["EMPTY" for j in range(8)]
+    board.append(row)
+
+# OR using nested list comprehension
+board = [["EMPTY" for i in range(8)] for j in range(8)]
+#115: 2D List – Placing Chess Pieces
+Set pieces on the chessboard by indexing with row and column.
+
+🔸 Example
+
+python
+Copy
+Edit
+board[0][0] = "ROOK"
+board[0][7] = "ROOK"
+board[7][0] = "ROOK"
+board[7][7] = "ROOK"
+board[4][2] = "KNIGHT"   # C4
+board[3][4] = "PAWN"     # E5
+#116: 2D List – Temperature Matrix
+Create a 31×24 temperature matrix (floats), one row per day.
+
+🔸 Example
+
+python
+Copy
+Edit
+temps = [[0.0 for h in range(24)] for d in range(31)]
+#117: 2D List – Average Noon Temperature
+Compute the average temperature at 12:00 noon for the entire month.
+
+🔸 Example
+
+python
+Copy
+Edit
+total = 0.0
+for day in temps:
+    total += day[11]  # 12:00 noon is the 12th hour (index 11)
+average = total / 31
+print("Average temperature at noon:", average)
+#118: 2D List – Maximum Temperature of the Month
+Find the highest recorded temperature in the entire matrix.
+
+🔸 Example
+
+python
+Copy
+Edit
+highest = -100.0
+for day in temps:
+    for temp in day:
+        if temp > highest:
+            highest = temp
+print("The highest temperature was:", highest)
+#119: 2D List – Count Hot Days at Noon
+Count how many days had noon temperatures above 20℃.
+
+🔸 Example
+
+python
+Copy
+Edit
+hot_days = 0
+for day in temps:
+    if day[11] > 20.0:
+        hot_days += 1
+print(hot_days, "days were hot.")
+#120: 3D List – Hotel Room Occupancy
+Model a hotel with 3 buildings, 15 floors, 20 rooms per floor.
+
+🔸 Example
+
+python
+Copy
+Edit
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+#121: 3D List – Booking and Releasing Rooms
+Set room as occupied or vacant using proper indices.
+
+🔸 Example
+
+python
+Copy
+Edit
+rooms[1][9][13] = True   # Booking room 14, 10th floor, 2nd building
+rooms[0][4][1] = False   # Releasing 2nd room, 5th floor, 1st building
+
+#122: 3D List – Count Vacant Rooms on Specific Floor
+Count how many vacant rooms are available on a specific floor.
+
+🔸 Example
+
+python
+Copy
+Edit
+vacancy = 0
+for room_number in range(20):
+    if not rooms[2][14][room_number]:  # 15th floor, 3rd building
+        vacancy += 1
+print("Vacant rooms:", vacancy)
+
+#123: Why Do We Need Functions?
+Functions help avoid repeating code and allow easier updates and debugging. They also improve code readability and organization.
+
+🔸 Example
+
+python
+Copy
+Edit
+# Repeating this everywhere is inefficient
+print("Enter a value: ")
+
+# Better: define a function once
+def message():
+    print("Enter a value: ")
+#124: Decomposition
+Breaking down a big problem into smaller functions makes it manageable. This is essential when multiple developers are working together.
+
+🔸 Example
+
+python
+Copy
+Edit
+def input_data():
+    print("Getting data...")
+
+def process_data():
+    print("Processing data...")
+
+def output_data():
+    print("Displaying data...")
+
+# Main program
+input_data()
+process_data()
+output_data()
+#125: Where Do Functions Come From?
+Functions originate from:
+
+Built-in (e.g. print(), len())
+
+Preinstalled Modules (e.g. math.sqrt())
+
+User-defined (functions you create)
+
+🔸 Example
+
+python
+Copy
+Edit
+# Built-in
+print("Hello!")
+
+# Module function
+import math
+print(math.sqrt(16))
+
+# User-defined
+def greet():
+    print("Hi there!")
+
+greet()
+#126: Your First Function
+Functions are defined using def. They’re not executed until called.
+
+🔸 Example
+
+python
+Copy
+Edit
+def message():
+    print("Enter a value: ")
+
+# Function is not called yet
+print("We start here.")
+message()  # Now it's called
+print("We end here.")
+#127: How Functions Work
+When you call a function, Python jumps into it, executes its body, and returns.
+
+Important Rules:
+
+Define the function before calling it.
+
+Don’t use the same name for a variable and a function.
+
+🔸 Example – Correct Order
+
+python
+Copy
+Edit
+def message():
+    print("Enter a value: ")
+
+message()  # Correct: function is already defined
+🔸 Example – Wrong Order
+
+python
+Copy
+Edit
+message()  # Error: function not defined yet
+
+def message():
+    print("Enter a value: ")
+🔸 Example – Name Conflict
+
+python
+Copy
+Edit
+def message():
+    print("Enter a value: ")
+
+message = 5  # Now `message` is no longer a function
+message()    # Error
+🔸 Good Practice – Mixed Code
+
+python
+Copy
+Edit
+print("We start here.")
+
+def message():
+    print("Enter a value: ")
+
+message()
+
+print("We end here.")
+
+#128: LAB – Function with Input Prompts
+Use a function to simplify input prompts for three values.
+
+🔸 Example
+
+python
+Copy
+Edit
+def message():
+    print("Enter a value: ")
+
+message()
+a = int(input())
+message()
+b = int(input())
+message()
+c = int(input())
+
