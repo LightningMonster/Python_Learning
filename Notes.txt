@@ -529,18 +529,15 @@ else:
 An if inside another if for multi-level decisions.
 
 🔸 Example:
+    weather = "sunny"
+    restaurant_open = True
 
-python
-Copy
-Edit
-weather = "sunny"
-restaurant_open = True
+    if weather == "sunny":
+        if restaurant_open:
+            print("Eat outside.")
+        else:
+            print("Eat at home.")
 
-if weather == "sunny":
-    if restaurant_open:
-        print("Eat outside.")
-    else:
-        print("Eat at home.")
 #49 elif Statement
 Checks multiple conditions one by one; runs only the first True one.
 
