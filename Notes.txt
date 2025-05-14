@@ -510,13 +510,11 @@ Indented code runs only when the if condition is True.
 
 🔸 Example:
 
-python
-Copy
-Edit
-x = 10
-if x > 5:
-    print("Greater than 5")  # This runs only if condition is true
-print("Done")  # Always runs
+    x = 10
+    if x > 5:
+        print("Greater than 5")  # This runs only if condition is true
+    print("Done")  # Always runs
+
 #47 if-else Statement
 Executes one block if condition is True, another if False.
 
