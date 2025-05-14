@@ -542,20 +542,16 @@ An if inside another if for multi-level decisions.
 Checks multiple conditions one by one; runs only the first True one.
 
 🔸 Example:
+    score = 85
 
-python
-Copy
-Edit
-score = 85
-
-if score >= 90:
-    print("Grade A")
-elif score >= 80:
-    print("Grade B")
-elif score >= 70:
-    print("Grade C")
-else:
-    print("Grade F")
+    if score >= 90:
+        print("Grade A")
+    elif score >= 80:
+        print("Grade B")
+    elif score >= 70:
+        print("Grade C")
+    else:
+        print("Grade F")
 
 🔹 #50: Finding the Largest of Two Numbers
 This code reads two numbers and prints the larger.
