@@ -501,13 +501,10 @@ print(temperature >= 0.0)  # True
 Executes a block of code only if the condition is True.
 
 🔸 Example:
+    temperature = 30
+    if temperature > 25:
+        print("It's hot outside.")
 
-python
-Copy
-Edit
-temperature = 30
-if temperature > 25:
-    print("It's hot outside.")
 #46 Indentation in if Block
 Indented code runs only when the if condition is True.
 
