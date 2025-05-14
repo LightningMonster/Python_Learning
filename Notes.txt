@@ -519,15 +519,12 @@ Indented code runs only when the if condition is True.
 Executes one block if condition is True, another if False.
 
 🔸 Example:
-
-python
-Copy
-Edit
 weather = "rainy"
 if weather == "sunny":
     print("Go for a walk.")
 else:
     print("Stay indoors.")
+
 #48 Nested if Statements
 An if inside another if for multi-level decisions.
 
