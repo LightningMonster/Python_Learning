@@ -707,9 +707,6 @@ while number != -1:
 An infinite loop continues running forever. This occurs if the condition never becomes False.
 
 🔸 Example
-python
-Copy
-Edit
 while True:
     print("I'm stuck inside a loop.")
 To stop this, press Ctrl-C.
