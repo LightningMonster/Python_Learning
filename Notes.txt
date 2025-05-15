@@ -616,20 +616,18 @@ Find the largest of many numbers using a sentinel value (-1) to stop.
 🔹 #54: Python Loop Version for Largest of Many
 Use a while loop to accept unknown numbers until -1 is entered.
 
-python
-Copy
-Edit
 # 🔸 Example
-largest_number = -999999999
+    largest_number = -999999999
 
-while True:
-    number = int(input("Enter a number or -1 to stop: "))
-    if number == -1:
-        break
-    if number > largest_number:
-        largest_number = number
+    while True:
+        number = int(input("Enter a number or -1 to stop: "))
+        if number == -1:
+            break
+        if number > largest_number:
+            largest_number = number
 
-print("The largest number is:", largest_number)
+    print("The largest number is:", largest_number)
+
 🔹 #55: Using Python’s Built-in max()
 max() returns the largest of multiple values.
 
