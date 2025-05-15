@@ -567,19 +567,17 @@ This code reads two numbers and prints the larger.
 
     print("The larger number is:", larger_number)
 
-🔹 #51: Inline if-else Style
+#51: Inline if-else Style
 Python allows single-line if-else statements.
 
-python
-Copy
-Edit
-# 🔸 Example
-number1 = int(input("Enter the first number: "))
-number2 = int(input("Enter the second number: "))
-if number1 > number2: larger_number = number1
-else: larger_number = number2
+🔸 Example
+    number1 = int(input("Enter the first number: "))
+    number2 = int(input("Enter the second number: "))
+    if number1 > number2: larger_number = number1
+    else: larger_number = number2
 
-print("The larger number is:", larger_number)
+    print("The larger number is:", larger_number)
+    
 🔹 #52: Largest of Three Numbers
 Assumes the first is the largest, then checks the others.
 
