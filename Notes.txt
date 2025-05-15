@@ -577,13 +577,10 @@ Python allows single-line if-else statements.
     else: larger_number = number2
 
     print("The larger number is:", larger_number)
-    
+
 🔹 #52: Largest of Three Numbers
 Assumes the first is the largest, then checks the others.
 
-python
-Copy
-Edit
 # 🔸 Example
 number1 = int(input("Enter the first number: "))
 number2 = int(input("Enter the second number: "))
@@ -598,6 +595,7 @@ if number3 > largest_number:
     largest_number = number3
 
 print("The largest number is:", largest_number)
+
 🔹 #53: Pseudocode Concept (Finding Largest of Many)
 Find the largest of many numbers using a sentinel value (-1) to stop.
 
