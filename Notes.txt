@@ -656,21 +656,18 @@ else:
 🔹 #57: LAB – Income Tax Calculator (if-else)
 Calculate tax based on income brackets.
 
-python
-Copy
-Edit
 # 🔸 Example
-income = float(input("Enter the income: "))
+    income = float(input("Enter the income: "))
 
-if income <= 85528:
-    tax = income * 0.18 - 556.02
-else:
-    tax = 14839.02 + (income - 85528) * 0.32
+    if income <= 85528:
+        tax = income * 0.18 - 556.02
+    else:
+        tax = 14839.02 + (income - 85528) * 0.32
 
-if tax < 0:
-    tax = 0.0
+    if tax < 0:
+        tax = 0.0
 
-print("The tax is:", round(tax, 0), "thalers")
+    print("The tax is:", round(tax, 0), "thalers")
 
 #58: LAB – Leap Year Checker (if-elif-else)
 Check whether a year is a leap year using Gregorian rules.
