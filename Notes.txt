@@ -673,18 +673,18 @@ Calculate tax based on income brackets.
 Check whether a year is a leap year using Gregorian rules.
 
 🔸 Example
-year = int(input("Enter a year: "))
+    year = int(input("Enter a year: "))
 
-if year < 1582:
-    print("Not within the Gregorian calendar period")
-elif year % 4 != 0:
-    print("Common year")
-elif year % 100 != 0:
-    print("Leap year")
-elif year % 400 != 0:
-    print("Common year")
-else:
-    print("Leap year")
+    if year < 1582:
+        print("Not within the Gregorian calendar period")
+    elif year % 4 != 0:
+        print("Common year")
+    elif year % 100 != 0:
+        print("Leap year")
+    elif year % 400 != 0:
+        print("Common year")
+    else:
+        print("Leap year")
 
 #59: 3.2 Section 2 – Loops in Python
 
