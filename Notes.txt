@@ -695,14 +695,13 @@ Learn how to use while and for loops in Python. You'll discover how to create an
 The while loop repeatedly executes a block of code as long as a condition is True.
 
 🔸 Example
-python
-Copy
-Edit
+
 number = int(input("Enter a number: "))
 while number != -1:
     if number > 0:
         print("Positive number entered:", number)
     number = int(input("Enter a number or type -1 to stop: "))
+
 #61: 3.2.2 An infinite loop
 
 An infinite loop continues running forever. This occurs if the condition never becomes False.
