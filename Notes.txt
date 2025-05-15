@@ -685,7 +685,7 @@ Check whether a year is a leap year using Gregorian rules.
         print("Common year")
     else:
         print("Leap year")
-
+______________________________________________________________________________________________
 #59: 3.2 Section 2 – Loops in Python
 
 Learn how to use while and for loops in Python. You'll discover how to create and avoid infinite loops, exit loops, and skip iterations.
