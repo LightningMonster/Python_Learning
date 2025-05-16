@@ -716,9 +716,6 @@ To stop this, press Ctrl-C.
 Using a while loop to count even and odd numbers, stopping when zero is entered.
 
 🔸 Example
-python
-Copy
-Edit
 odd_numbers = 0
 even_numbers = 0
 number = int(input("Enter a number or type 0 to stop: "))
@@ -730,14 +727,13 @@ while number != 0:
     number = int(input("Enter a number or type 0 to stop: "))
 print("Odd numbers count:", odd_numbers)
 print("Even numbers count:", even_numbers)
+
 #63: Using a counter variable to exit a loop
 
 You can use a counter to control the number of iterations in a while loop.
 
 🔸 Example
-python
-Copy
-Edit
+
 counter = 5
 while counter:
     print("Inside the loop.", counter)
