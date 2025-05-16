@@ -739,6 +739,7 @@ while counter:
     print("Inside the loop.", counter)
     counter -= 1
 print("Outside the loop.", counter)
+
 #64: 3.2.4 LAB – Guess the Secret Number
 
 Help the magician complete the program where the user guesses the secret number.
