@@ -745,15 +745,13 @@ print("Outside the loop.", counter)
 Help the magician complete the program where the user guesses the secret number.
 
 🔸 Example
-python
-Copy
-Edit
 secret_number = 7  # The magician's secret number
 number = int(input("Enter your guess: "))
 while number != secret_number:
     print("Ha ha! You're stuck in my loop!")
     number = int(input("Enter your guess: "))
 print("Well done, muggle! You are free now.")
+
 #65: 3.2.5 Looping your code with for
 
 A for loop is used for iterating over a range of numbers or items in a collection, often when the number of iterations is known.
